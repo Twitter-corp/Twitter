@@ -1,0 +1,51 @@
+/* Componentes reutilizáveis */
+
+/* Botões */
+.btn-primary {
+    @apply bg-[#1d9bf0] hover:bg-[#1a8cd8] text-white font-bold py-2 px-4 rounded-full transition-colors duration-200;
+}
+
+.btn-secondary {
+    @apply bg-transparent border border-gray-600 hover:bg-gray-800 text-white font-bold py-2 px-4 rounded-full transition-colors duration-200;
+}
+
+/* Cards */
+.tweet-card {
+    @apply border-b border-gray-600 p-4 hover:bg-white hover:bg-opacity-5 transition-colors duration-200;
+}
+
+.tweet-card:hover {
+    background-color: rgba(255, 255, 255, 0.03);
+}
+
+/* Inputs */
+.input-tweet {
+    @apply bg-transparent border-none text-xl placeholder-gray-500 resize-none focus:outline-none w-full text-white;
+}
+
+/* Ícones interativos */
+.icon-hover {
+    @apply p-2 rounded-full transition-colors duration-200 cursor-pointer;
+}
+
+.icon-hover:hover {
+    background-color: rgba(29, 155, 240, 0.1);
+}
+
+/* Sidebar */
+.sidebar-item {
+    @apply flex items-center space-x-3 p-3 rounded-full transition-colors duration-200 cursor-pointer;
+}
+
+.sidebar-item:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Modal */
+.modal-overlay {
+    @apply fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50;
+}
+
+.modal-content {
+    @apply bg-black border border-gray-600 rounded-2xl p-6 max-w-md w-full mx-4;
+}
